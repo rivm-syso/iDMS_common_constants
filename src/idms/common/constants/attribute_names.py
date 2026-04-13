@@ -1,0 +1,235 @@
+
+
+ATTR_SYS_PREFIX = 'sys::'
+ATTR_USR_PREFIX = 'user::'
+
+
+ATTR_PROCESSREQUEST = 'processrequest'
+"""triggers the jobengine to start processing a dataset"""
+
+ATTR_COMPLETE = 'complete'
+ATTR_RO = '{}readonly'.format(ATTR_SYS_PREFIX)
+ATTR_FINALIZE = 'sys::finalize'
+
+ATTR_ARCHIVE_PREFIX = "{}archive::".format(ATTR_SYS_PREFIX)
+ATTR_ARCHIVE_USR_PREFIX = '{}archive::'.format(ATTR_USR_PREFIX)
+ATTR_ARCHIVE_ENABLE = "{}enable".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_DESIREDSTATE = "{}desired_state".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_KEEP_ONLINE = "{}keep_online".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_KEEP_ONLINE_TILL = '{}keep_online_till'.format(ATTR_ARCHIVE_USR_PREFIX)
+ATTR_ARCHIVE_LOCAL = '{}local'.format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_STAGE = "{}stage".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_STATE = "{}state".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_LASTRUN = "{}lastrun".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_LASTCHECK = "{}lastcheck".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_MINCOPIES = "{}min_copies".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_ONLINEPERCENTAGE = "{}online_percentage".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_STATUS = "{}status".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_STATUSMSG = "{}statusmsg".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_TARFILE = "{}tarfile".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_TARFILE_NEW = "{}tarfile::new".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_MANIFESTFILE = "{}manifest".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_MANIFESTFILE_NEW = "{}manifest::new".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_CREATERETENTION = "{}create_retention".format(ATTR_ARCHIVE_PREFIX)
+ATTR_ARCHIVE_LASTUSERETENTION = "{}lastuse_retention".format(ATTR_ARCHIVE_PREFIX)
+
+
+
+ATTR_COLLSIZE = "{}collection_size".format(ATTR_SYS_PREFIX)
+ATTR_COLLSIZE_TIME = "{}collection_size_time".format(ATTR_SYS_PREFIX)
+
+ATTR_DATA_TYPE = '{}data::type'.format(ATTR_SYS_PREFIX)
+ATTR_DATA_STATE = '{}data::state'.format(ATTR_SYS_PREFIX)
+ATTR_USER_DATA_STATE = '{}data::state'.format(ATTR_USR_PREFIX)
+
+ATTR_CONSISTENCY_PREFIX = 'sys::consistency::'
+
+ARCHIVE_STATUS_OK = 'OK'
+ARCHIVE_STATUS_MANIFEST_ERROR = 'MANIFEST_ERROR'
+ARCHIVE_STATUS_TAR_WITHOUT_MANIFEST = 'TAR_WITHOUT_MANIFEST'
+ARCHIVE_STATUS_MANIFEST_WITHOUT_TAR = 'MANIFEST_WITHOUT_TAR'
+ARCHIVE_STATUS_OBJECTS_MISSING = 'OBJECTS_MISSING'
+ARCHIVE_STATUS_INCONSISTENT_STATE = 'INCONSISTENT STATE'
+
+TYPE_VALID = 'valid'
+TYPE_INVALID = 'invalid'
+TYPE_DISTRIBUTED = 'distributed'
+TYPE_TEMPORARY = 'temporary'
+TYPE_DATA = 'data'
+TYPE_REFERENCE_DATA = 'reference_data'
+
+ATTR_LOCK = "{}lock::".format(ATTR_SYS_PREFIX)
+
+ATTR_PIPELINE_PREFIX = '{}pipeline::'.format(ATTR_SYS_PREFIX)
+ATTR_PIPELINE_LASTUSE = '{}last_use'.format(ATTR_PIPELINE_PREFIX)
+ATTR_PIPELINE_USEDBY = '{}used_by'.format(ATTR_PIPELINE_PREFIX)
+ATTR_PIPELINE_STAGETIME = '{}stage_time'.format(ATTR_PIPELINE_PREFIX)
+ATTR_PIPELINE_INPUTID = '{}input_collection_id'.format(ATTR_PIPELINE_PREFIX)
+ATTR_PIPELINE_GITHASH = '{}githash'.format(ATTR_PIPELINE_PREFIX)
+ATTR_PIPELINE_GITREPO = '{}gitrepo'.format(ATTR_PIPELINE_PREFIX)
+
+
+#Fields we set on a output collection, which refdata was used (provenance)
+ATTR_PIPELINE_REFDATA_PREFIX = '{}refdata::'.format(ATTR_PIPELINE_PREFIX)
+ATTR_REFDATA_VERSION = '::reference_version_id'
+ATTR_REFDATA_VERSION_DATASET_ID = '::reference_version_dataset_id'
+ATTR_REFDATA_REFERENCEDATANAME = '::reference_dataset:'
+ATTR_REFDATA_COLLECTION = '::reference_version_collection'
+ATTR_REFDATA_PHYSICAL_PATH = '::reference_version_physical_path'
+ATTR_REFDATA_LABEL = '::refdata_label'
+
+#Fields we set on a refdata-collection (by the refdata_updater-process)
+ATTR_REFDATA = 'reference_dataset'
+ATTR_REFDATA_UPDATER = '{}::updater'.format(ATTR_REFDATA)
+ATTR_REFDATA_UPDATER_COMMIT = '{}::commit'.format(ATTR_REFDATA_UPDATER)
+ATTR_REFDATA_UPDATER_REPOSITORY = '{}::repository'.format(ATTR_REFDATA_UPDATER)
+
+ATTR_REFDATA_IMPORTED = '{}::import_time'.format(ATTR_REFDATA)
+ATTR_REFDATA_SYNCHRONIZED= '{}::synchronization_time'.format(ATTR_REFDATA)
+ATTR_REFDATA_DATASET= '{}::dataset_name'.format(ATTR_REFDATA)
+ATTR_REFDATA_DATASET_VERSION= '{}::version'.format(ATTR_REFDATA)
+
+ATTR_REFDATA_TASK_SCRIPT = '{}::script'.format(ATTR_REFDATA)
+ATTR_REFDATA_TASK_SCRIPT_COMMIT = '{}::commit'.format(ATTR_REFDATA_TASK_SCRIPT)
+ATTR_REFDATA_TASK_SCRIPT_REPOSITORY = '{}::repository'.format(ATTR_REFDATA_TASK_SCRIPT)
+
+
+
+ATTR_RUN_PREFIX = '{}run::'.format(ATTR_SYS_PREFIX)
+ATTR_RUN_SITE = '{}site'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_CLUSTER = '{}cluster'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_CLUSTER_DATA_PREFIX = '{}clusterdata::'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_CLUSTER_PARAMS_PREFIX = '{}clusterparams::'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_OWNER = '{}owner'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_EXITCODE = 'sys::run::exit_code'
+ATTR_RUN_EXITPOST = 'sys::run::exit_post'
+ATTR_RUN_EXITDOWNLOAD = 'sys::run::exitdownload'
+ATTR_RUN_OUTPUTCOLL = '{}output_collection'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_OUTPUTDIR = '{}output_dir'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_REQUESTINGUSER=  '{}requestinguser'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_RESULT = '{}result'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_PIPELINESTARTTIME = 'sys::run::pipeline_starttime'
+ATTR_RUN_POSTCOUNTER = '{}counter::post'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_PROJECTGROUP = '{}projectgroup'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_RUNDIR = '{}run_dir'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_SERVICEACCOUNT = '{}service_account'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_USEPROJECTACCOUNT = '{}useprojectaccount'.format(ATTR_RUN_PREFIX)
+
+ATTR_RUN_STARTTIME = '{}start_time'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_FINISHTIME = '{}finish_time'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_LASTMOVE = '{}last_move_time'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_JOBID = '{}lsf_jobid'.format(ATTR_RUN_PREFIX)
+
+ATTR_TEMP_PREFIX = '{}temp::'.format(ATTR_SYS_PREFIX)
+ATTR_RUN_ENV = '{}environment::'.format(ATTR_TEMP_PREFIX)
+ATTR_RUN_OUTPUTTICKET = '{}output_ticket'.format(ATTR_TEMP_PREFIX)
+ATTR_RUN_TASK = '{}task'.format(ATTR_TEMP_PREFIX)
+ATTR_RUN_OUTPUTPREFIX = '{}output_prefix'.format(ATTR_TEMP_PREFIX)
+
+ATTR_RUNSHEET_PREFIX = '{}runsheet::'.format(ATTR_SYS_PREFIX)
+ATTR_RUNSHEET_ID = '{}id'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_CREATETIME = '{}create_time'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_DATAOBJECT = '{}dataobject'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_DEPENDENCY = '{}depends_on'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_FULLPATH = '{}full_path'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_INPUTCOLL = '{}input_collection'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_INPUTCOLLREF = '{}input_collection_ref'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_DISTRIBUTION = '{}distribution'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_MODIFYINPLACE = '{}modify_in_place'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_PROJECTID = '{}projectID'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_LSFQUEUE = '{}lsf_queue'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_MAX_RUNTIME = '{}max_runtime'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_NAME = '{}name'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_REPO = '{}repo'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_TAG = '{}tag'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_RESTARTABLE = '{}restartable'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_OMITSTAGING = '{}omit_staging'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_OMITBRINGONLINE = '{}omit_bringonline'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_PROCESSGROUPID = '{}processgroupid'.format(ATTR_RUNSHEET_PREFIX)     #seems to be the PROCESS_GROUP_INSTANCE_ID!
+ATTR_RUNSHEET_PROCESSGROUP = '{}processgroup'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_PROCESSREF_NAME = '{}processref_name'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_SAMPLESHEET = '{}samplesheet'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_STATE = '{}state'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_PROCESSID = '{}processID'.format(ATTR_RUNSHEET_PREFIX)
+ATTR_RUNSHEET_TYPE = '{}type'.format(ATTR_RUNSHEET_PREFIX)
+
+ATTR_RULES_PREFIX = '{}rules::'.format(ATTR_SYS_PREFIX)
+ATTR_RULES_OBJECTIDS = '{}object_ids'.format(ATTR_RULES_PREFIX)
+
+ATTR_TIERING_PREFIX = '{}tiering::'.format(ATTR_SYS_PREFIX)
+ATTR_TIERING_GROUP = '{}group'.format(ATTR_TIERING_PREFIX)
+ATTR_SITE = '{}site'.format(ATTR_SYS_PREFIX)
+
+ATTR_UPLOAD = 'user::upload'
+ATTR_UPLOADNAME = '{}::name'.format(ATTR_UPLOAD)
+ATTR_UPLOADERRORMSG = '{}::error_msg'.format(ATTR_UPLOAD)
+ATTR_UPLOADPARENT = f'{ATTR_UPLOAD}::parent'
+ATTR_UPLOADSETTINGS = 'user::upload::settings::'
+ATTR_UPLOADSETTING_COLLECTION = '{}collection'.format(ATTR_UPLOADSETTINGS)
+ATTR_UPLOADSETTING_PROJECTID = '{}projectID'.format(ATTR_UPLOADSETTINGS)
+ATTR_UPLOADMETA = 'user::upload::meta::'
+ATTR_UPLOADMETASCHEMA = 'user::upload::schemafile'
+
+ATTR_DATASETID = 'sys::dataset_id'
+ATTR_PROJECTUUID = 'sys::project_uuid'
+ATTR_OBJECTID = '{}object_id'.format(ATTR_SYS_PREFIX)
+ATTR_ENABLE = '{}enable::'.format(ATTR_SYS_PREFIX)
+ATTR_PROCESSREQUEST = 'processrequest'
+
+
+ATTR_RESOURCE_PREFIX = '{}resource::'.format(ATTR_SYS_PREFIX)
+ATTR_RESOURCE_AVAILABLE = '{}available'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_COPIES = '{}copies'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_COPY_MINAGE = '{}min_age_before_copy'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_COST = '{}cost'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_ENABLED = '{}enabled'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_LOCAL = '{}local'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_SPACETARGET = '{}spacetarget'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_SPACELIMIT = '{}spacelimit'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_MAXCOPIES = '{}maxcopies'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_ONLINE = '{}online'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_STAGE = '{}stage'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_SURF = '{}surf'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_TAR = '{}tar'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_KEEP = '{}keep'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_MANIFEST = '{}manifest'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_TRIM_MINAGE = '{}min_age_before_trim'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_REFERENCEDATA = '{}reference_data_resource'.format(ATTR_RESOURCE_PREFIX)
+ATTR_RESOURCE_REFDATA_RETENTION = '{}reference_data_retention'.format(ATTR_RESOURCE_PREFIX)
+
+
+ATTR_SYS_SITE = '{}site'.format(ATTR_SYS_PREFIX)
+ATTR_PROCESSGROUPID = 'processgroupID'
+
+
+USER_PIPELINE_INPUTID = "user::pipeline::input_collection_id"
+USER_PIPELINE_INPUT = "user::pipeline::input_collection"
+USER_PIPELINE_AUTOSTART = "user::pipeline::autostart"
+
+#ngsweb collbrowser.py
+ATTR_DATAOBJECTID = 'sys::object_id'
+ATTR_PROJECTID = 'projectID'
+ATTR_PROCESSID = 'processID'
+ATTR_RUNSHEET_PROCESSGROUPGUID = 'sys::runsheet::processgroupid'
+
+ATTR_PIPELINE_INPUT_COLLECTION_ID = f'{ATTR_PIPELINE_PREFIX}input_collection_id'
+
+
+ATTR_UISCHEMA = 'sys::uischema'
+
+# attributes used for metadata
+PROJECT_ATTRS = ['user::upload::settings::projectID']
+ATTR_SCHEMA_IN_USE = 'user::schema_in_use::'
+ATTR_UPLOAD_PREFIX = 'user::metadata::'
+ATTR_UPLOAD_DEFAULT_PREFIX = 'default_metadata::'
+ATTR_METADATA_PREFIX = 'metadata::'
+AVU2JSON_PREFIX = '0'
+ATTR_PROJECT_SUFFIX = 'project'
+ATTR_DATASET_DEFAULT_SUFFIX = 'dataset'
+ATTR_REFERENCE_SUFFIX = 'reference'
+
+
+META_SUFFIXLENGTH = 'sys::suffixlength'
+
+
+ATTR_SYS_STATE = 'sys::data::state'
