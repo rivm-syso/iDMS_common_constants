@@ -57,6 +57,7 @@ TYPE_DISTRIBUTED = 'distributed'
 TYPE_TEMPORARY = 'temporary'
 TYPE_DATA = 'data'
 TYPE_REFERENCE_DATA = 'reference_data'
+TYPE_EMPTY = 'empty'
 
 ATTR_LOCK = "{}lock::".format(ATTR_SYS_PREFIX)
 
@@ -104,6 +105,8 @@ ATTR_RUN_OWNER = '{}owner'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_EXITCODE = 'sys::run::exit_code'
 ATTR_RUN_EXITPOST = 'sys::run::exit_post'
 ATTR_RUN_EXITDOWNLOAD = 'sys::run::exitdownload'
+ATTR_RUN_EXITDISTRIBUTE = 'sys::run::exitdistribute'
+
 ATTR_RUN_OUTPUTCOLL = '{}output_collection'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_OUTPUTDIR = '{}output_dir'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_REQUESTINGUSER=  '{}requestinguser'.format(ATTR_RUN_PREFIX)
@@ -231,5 +234,8 @@ ATTR_REFERENCE_SUFFIX = 'reference'
 
 META_SUFFIXLENGTH = 'sys::suffixlength'
 
+#
+ATTR_JOBTABLE_CHANGE = 'sys::jobtable::change'
+ATTR_JOBTABLE_REFRESH = 'sys::jobtable::refresh'
 
 ATTR_SYS_STATE = 'sys::data::state'
