@@ -177,7 +177,6 @@ ATTR_DATASETID = 'sys::dataset_id'
 ATTR_PROJECTUUID = 'sys::project_uuid'
 ATTR_OBJECTID = '{}object_id'.format(ATTR_SYS_PREFIX)
 ATTR_ENABLE = '{}enable::'.format(ATTR_SYS_PREFIX)
-ATTR_PROCESSREQUEST = 'processrequest'
 
 
 ATTR_RESOURCE_PREFIX = '{}resource::'.format(ATTR_SYS_PREFIX)
