@@ -7,7 +7,7 @@ name = "idms-common-constants"
 dynamic = ["version"]
 requires-python = ">=3.10"
 description = "Shared constants between different projects (AVUs)"
-dependencies = ["python-irodsclient==3.2.0"]
+dependencies = []
 
 [project.optional-dependencies]
 docs = [
