@@ -3,9 +3,12 @@
 ATTR_SYS_PREFIX = 'sys::'
 ATTR_USR_PREFIX = 'user::'
 
-
 ATTR_PROCESSREQUEST = 'processrequest'
 """triggers the jobengine to start processing a dataset"""
+ATTR_PROCESSREQUEST_SITE = '{}::site'.format(ATTR_PROCESSREQUEST)
+ATTR_PROCESSREQUEST_CLUSTER = '{}::cluster'.format(ATTR_PROCESSREQUEST)
+ATTR_PROCESSREQUEST_PROCESSID = '{}::processID'.format(ATTR_PROCESSREQUEST)
+ATTR_PROCESSREQUEST_PROCESSGROUPID = '{}::processgroupID'.format(ATTR_PROCESSREQUEST)
 
 ATTR_COMPLETE = 'complete'
 ATTR_RO = '{}readonly'.format(ATTR_SYS_PREFIX)

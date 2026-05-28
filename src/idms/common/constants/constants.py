@@ -31,3 +31,12 @@ LOGNAME=[
   'WARN', 
   'ERROR'
 ]
+
+# Mapping of irods DATA_REPL_STATUS values to description
+DATA_REPL_STATUS = {
+    '0': 'STALE_REPLICA',
+    '1': 'GOOD_REPLICA',
+    '2': 'INTERMEDIATE_REPLICA',
+    '3': 'READ_LOCKED',
+    '4': 'WRITE_LOCKED'
+}
