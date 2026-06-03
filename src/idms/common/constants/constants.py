@@ -11,7 +11,10 @@ TF = {
     0: FALSE
 }
 
-ACTIVE_RUNSHEET_STATES = [ 'incoming', 'prepare', 'stage', 'spacecheck', 'download', 'queued', 'startup', 'active', 'finishing', 'postprocessing', 'distribute', 'cleanup' ]
+ACTIVE_RUNSHEET_STATES = [ 'incoming', 'depends', 'choose', 'prepare',
+                     'stage', 'spacecheck', 'download', 'queued',
+                     'active', 'finishing', 'postprocessing', 'distribute',
+                     'cleanup', 'notify', 'waiting']
 
 # Logging Settings
 DEBUG2=0
