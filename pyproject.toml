@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "idms-common-constants"
 dynamic = ["version"]
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 description = "Shared constants between different projects (AVUs)"
 dependencies = []
 
@@ -35,8 +35,8 @@ search_parent_directories = true
 
 [dependency-groups]
 dev = [
-   "pytest>=9.0.2",
-   "pytest-cov>=7.0.0"
+   "pytest>=8.0.0",
+   "pytest-cov>=5.0.0"
 ]
 
 [tool.pytest]
