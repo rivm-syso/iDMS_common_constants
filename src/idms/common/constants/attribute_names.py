@@ -173,7 +173,7 @@ ATTR_UPLOADPARENT = f'{ATTR_UPLOAD}::parent'
 ATTR_UPLOADSETTINGS = 'user::upload::settings::'
 ATTR_UPLOADSETTING_COLLECTION = '{}collection'.format(ATTR_UPLOADSETTINGS)
 ATTR_UPLOADSETTING_PROJECTID = '{}projectID'.format(ATTR_UPLOADSETTINGS)
-ATTR_UPLOADMETA = 'user::upload::meta::'
+ATTR_UPLOADMETA = 'user::upload::metadata::'
 ATTR_UPLOADMETASCHEMA = 'user::upload::schemafile'
 
 ATTR_DATASETID = 'sys::dataset_id'
