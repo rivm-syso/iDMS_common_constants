@@ -85,6 +85,7 @@ ATTR_REFDATA_LABEL = '::refdata_label'
 #Fields we set on a refdata-collection (by the refdata_updater-process)
 ATTR_REFDATA = 'reference_dataset'
 ATTR_REFDATA_UPDATER = '{}::updater'.format(ATTR_REFDATA)
+ATTR_REFDATA_UPDATER_PACKAGE_VERSION = '{}::version'.format(ATTR_REFDATA_UPDATER)
 ATTR_REFDATA_UPDATER_COMMIT = '{}::commit'.format(ATTR_REFDATA_UPDATER)
 ATTR_REFDATA_UPDATER_REPOSITORY = '{}::repository'.format(ATTR_REFDATA_UPDATER)
 
