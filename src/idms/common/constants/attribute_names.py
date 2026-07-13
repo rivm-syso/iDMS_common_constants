@@ -1,5 +1,3 @@
-
-
 ATTR_SYS_PREFIX = 'sys::'
 ATTR_USR_PREFIX = 'user::'
 
@@ -35,7 +33,6 @@ ATTR_ARCHIVE_MANIFESTFILE = "{}manifest".format(ATTR_ARCHIVE_PREFIX)
 ATTR_ARCHIVE_MANIFESTFILE_NEW = "{}manifest::new".format(ATTR_ARCHIVE_PREFIX)
 ATTR_ARCHIVE_CREATERETENTION = "{}create_retention".format(ATTR_ARCHIVE_PREFIX)
 ATTR_ARCHIVE_LASTUSERETENTION = "{}lastuse_retention".format(ATTR_ARCHIVE_PREFIX)
-
 
 
 ATTR_COLLSIZE = "{}collection_size".format(ATTR_SYS_PREFIX)
@@ -231,9 +228,9 @@ ATTR_UPLOAD_DEFAULT_PREFIX = 'default_metadata::'
 ATTR_METADATA_PREFIX = 'metadata::'
 AVU2JSON_PREFIX = '0'
 ATTR_PROJECT_SUFFIX = 'project'
-ATTR_DATASET_DEFAULT_SUFFIX = 'dataset'
+ATTR_DATASET_DEFAULT_SUFFIX = 'dataset_default'
+ATTR_DATASET_UPLOAD_SUFFIX = 'dataset_upload'
 ATTR_REFERENCE_SUFFIX = 'reference'
-
 
 META_SUFFIXLENGTH = 'sys::suffixlength'
 
