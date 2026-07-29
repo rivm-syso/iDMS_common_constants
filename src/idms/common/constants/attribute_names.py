@@ -12,6 +12,8 @@ ATTR_COMPLETE = 'complete'
 ATTR_RO = '{}readonly'.format(ATTR_SYS_PREFIX)
 ATTR_FINALIZE = 'sys::finalize'
 
+ATTR_AD_PREFIX = '{}ad::'.format(ATTR_SYS_PREFIX)
+
 ATTR_ARCHIVE_PREFIX = "{}archive::".format(ATTR_SYS_PREFIX)
 ATTR_ARCHIVE_USR_PREFIX = '{}archive::'.format(ATTR_USR_PREFIX)
 ATTR_ARCHIVE_ENABLE = "{}enable".format(ATTR_ARCHIVE_PREFIX)
@@ -42,6 +44,8 @@ ATTR_COLLSIZE_TIME = "{}collection_size_time".format(ATTR_SYS_PREFIX)
 ATTR_DATA_TYPE = '{}data::type'.format(ATTR_SYS_PREFIX)
 ATTR_DATA_STATE = '{}data::state'.format(ATTR_SYS_PREFIX)
 ATTR_USER_DATA_STATE = '{}data::state'.format(ATTR_USR_PREFIX)
+
+ATTR_GROUP_EXTERNAL = '{}group::external'.format(ATTR_SYS_PREFIX)
 
 ATTR_CONSISTENCY_PREFIX = 'sys::consistency::'
 
