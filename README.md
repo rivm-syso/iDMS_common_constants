@@ -2,8 +2,8 @@
 
 [![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8B%20%20%E2%97%8B-orange)](https://fair-software.eu)
 ![PEP8](https://badgen.net/badge/pep/8/pink?icon=python)
-![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue)
-![License](https://img.shields.io/badge/license-Internal-green)
+![Python Version](https://img.shields.io/badge/python-3.9-blue)
+![License](https://img.shields.io/badge/license-EUPL_v1.2-green)
 
 ## Description
 
