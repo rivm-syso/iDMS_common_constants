@@ -115,6 +115,7 @@ ATTR_RUN_EXITDISTRIBUTE = 'sys::run::exitdistribute'
 
 ATTR_RUN_OUTPUTCOLL = '{}output_collection'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_OUTPUTDIR = '{}output_dir'.format(ATTR_RUN_PREFIX)
+ATTR_RUN_OUTPUTTICKET = '{}output_ticket'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_REQUESTINGUSER=  '{}requestinguser'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_RESULT = '{}result'.format(ATTR_RUN_PREFIX)
 ATTR_RUN_PIPELINESTARTTIME = 'sys::run::pipeline_starttime'
@@ -131,7 +132,6 @@ ATTR_RUN_JOBID = '{}lsf_jobid'.format(ATTR_RUN_PREFIX)
 
 ATTR_TEMP_PREFIX = '{}temp::'.format(ATTR_SYS_PREFIX)
 ATTR_RUN_ENV = '{}environment::'.format(ATTR_TEMP_PREFIX)
-ATTR_RUN_OUTPUTTICKET = '{}output_ticket'.format(ATTR_TEMP_PREFIX)
 ATTR_RUN_TASK = '{}task'.format(ATTR_TEMP_PREFIX)
 ATTR_RUN_OUTPUTPREFIX = '{}output_prefix'.format(ATTR_TEMP_PREFIX)
 
